@@ -31,6 +31,7 @@ if($usermail == true){
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="./admin/css/roombook.css">
+    <link rel="stylesheet" href="/Hotel-Management-System-main/css/home.css">
     <style>
       #guestdetailpanel{
         display: none;
@@ -268,7 +269,18 @@ if($usermail == true){
       </div>
     </div>
   </section>
+  <div class="sms-form">
+        <h2>Send SMS Notification</h2>
+        <form action="send.php" method="POST">
+            <label for="number">Phone Number:</label>
+            <input type="text" name="number" id="number" placeholder="Enter Phone Number" required>
 
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send SMS</button>
+        </form>
+    </div>
 
 </body>
 
